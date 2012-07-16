@@ -1,0 +1,91 @@
+/* CSS declarations go here */
+body {
+  background-image: url("/images/texture.png");
+  box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
+  -webkit-box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
+  -moz-box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
+  height: 5000px;
+  width: 10000px;
+  padding: 0;
+  margin: 0;
+}
+
+#mask {
+  background: black;
+  color: white;
+  margin-top: 50px;
+  padding: 50px;
+  font-size: 100px;
+}
+
+.handle {
+  text-indent: -9999px;
+  float: right;
+  height: 4000px;
+  width: 100px;
+  background-image: url("/images/handle_texture.png");
+  margin-right: 25px;
+  box-shadow: 0px 0px 15px #333;
+  border-left: 2px solid silver;
+  border-right: 2px solid silver;
+  border-radius: 17px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  position: relative;
+}
+.screw:nth-child(1) {
+  left: 10px;
+}
+.screw:nth-child(2) {
+  left: 70px;
+}
+.screw:nth-child(3) {
+  top: 955px;
+  left: 10px;
+}
+.screw:nth-child(4) {
+  left: 70px;
+  top: 955px;
+}
+.word {
+  font-size: 14px;
+  font-family: "Helvetica";
+  border: 1px solid #777;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  position: absolute;
+  padding: 5px;
+/*  box-shadow: 0px 0px 3px #999;*/
+  cursor: move;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.5, #FAFAFA),
+    color-stop(0.5, #FFF)
+  );
+}
+.word:nth-child(2n) {
+  -webkit-transform:rotate(1deg);
+}
+.word:nth-child(4n) {
+  -webkit-transform:rotate(-1deg);
+}
+.word:nth-child(6n) {
+  -webkit-transform:rotate(2deg);
+}
+.word:nth-child(8n) {
+  -webkit-transform:rotate(-2deg);
+}
+.word:nth-child(20n) {
+  -webkit-transform:rotate(3deg);
+}
+.word:nth-child(21n) {
+  -webkit-transform:rotate(-3deg);
+}
+#pbr {
+  -webkit-transform:rotate(25deg);
+  position: absolute;
+  top: 531px;
+  left: 1300px;
+}
