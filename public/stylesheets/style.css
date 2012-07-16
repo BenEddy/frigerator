@@ -18,10 +18,22 @@ body {
   font-size: 100px;
 }
 
+#mask .status_bar_container {
+  width: 500px;
+}
+
+#mask span {
+  width: 0%;
+  display: block;
+  font-size: 12px;
+  height: 15px;
+  background: green;
+}
+
 .handle {
   text-indent: -9999px;
   float: right;
-  height: 4000px;
+  height: 5000px;
   width: 100px;
   background-image: url("/images/handle_texture.png");
   margin-right: 25px;
@@ -83,6 +95,23 @@ body {
 .word:nth-child(21n) {
   -webkit-transform:rotate(-3deg);
 }
+
+#words img {
+  position: absolute;
+}
+
+#drawing {
+  top: 4200px;
+  left: 9100px;
+  -webkit-transform: rotate(8deg);
+}
+
+#travolta {
+  top: 2300px;
+  left: 1000px;
+  -webkit-transform: rotate(-1deg);
+}
+
 #pbr {
   -webkit-transform:rotate(25deg);
   position: absolute;
