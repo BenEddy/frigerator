@@ -1,7 +1,13 @@
 var Mongolian = require("mongolian")
-var server    = new Mongolian
-var db        = server.db("node-words")
 var ObjectId =  require('mongolian').ObjectId
+
+if(process.env.MONGOHQ_URL) {
+  var db = new Mongolian(process.env.MONGOHQ_URL);
+} else {
+  var server = new Mongolian;
+  var db = server.db("node-words")
+}
+
 var words = db.collection("words")
 
 WordCollection = function() {
