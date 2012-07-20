@@ -7,6 +7,7 @@ var dictionaries = [
   {iterations: 1, file: "random.txt"},
   {iterations: 1, file: "urban.txt"},
   {iterations: 3, file: "programming.txt"}
+  {iterations: 1, file: "last_minute.txt"}
 ]
 
 WordImporter = function (options) {
@@ -48,7 +49,7 @@ WordImporter.prototype.importDictionaryData = function(data, callback) {
 
 WordImporter.prototype.importWord = function(options) {
   options.collection.insert({
-    text: options.word.replace(/\s/g, "&nbsp;"),
+    text: options.word.replace(/\s|-/g, "&nbsp;"),
     x: this.randomInt(9900),
     y: this.randomInt(4900)
   });
