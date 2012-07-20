@@ -96,7 +96,7 @@ imagine
 itch
 jog
 jump
-kick  knit
+kick knit
 land
 lock
 march
@@ -121,3 +121,5 @@ yawn
 yell
 zip
 zoom
+lip
+suck

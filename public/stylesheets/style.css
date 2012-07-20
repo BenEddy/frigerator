@@ -171,6 +171,9 @@ body {
   right:0px;
   z-index: 10;
 }
+#legend:hover {
+  cursor: crosshair;
+}
 #legend span#position {
   background-color: #333;
   text-indent: -9999px;
