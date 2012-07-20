@@ -72,10 +72,10 @@ body {
     linear,
     left bottom,
     left top,
-    color-stop(0.5, #EFEFEF),
+    color-stop(0.5, #F5F5F5),
     color-stop(0.5, #FFF)
   );
-  background: -moz-linear-gradient(bottom, #EFEFEF, #FFF 50%);
+  background: -moz-linear-gradient(bottom, #F5F5F5, #FFF 50%);
 }
 .word:nth-child(2n) {
   -webkit-transform:rotate(1deg);
