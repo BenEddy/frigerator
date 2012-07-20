@@ -67,33 +67,45 @@ body {
   border-bottom: 2px solid #333;
   position: absolute;
   padding: 5px;
-/*  box-shadow: 0px 0px 3px #999;*/
   cursor: move;
   background-image: -webkit-gradient(
     linear,
     left bottom,
     left top,
-    color-stop(0.5, #FAFAFA),
+    color-stop(0.5, #EFEFEF),
     color-stop(0.5, #FFF)
   );
+/*  background-image: -webkit-linear-gradient(bottom, $start-color $start-stop, $end-color $end-stop);*/
+
+/*  background: -moz-linear-gradient(
+    bottom, #FAFAFA, #FFF, 0.5, 0.5
+  );
+*/
+  background: -moz-linear-gradient(bottom, #EFEFEF, #FFF 50%);
 }
 .word:nth-child(2n) {
   -webkit-transform:rotate(1deg);
+  -moz-transform:rotate(1deg);
 }
 .word:nth-child(4n) {
   -webkit-transform:rotate(-1deg);
+  -moz-transform:rotate(-1deg);
 }
 .word:nth-child(6n) {
   -webkit-transform:rotate(2deg);
+  -moz-transform:rotate(2deg);
 }
 .word:nth-child(8n) {
   -webkit-transform:rotate(-2deg);
+  -moz-transform:rotate(-2deg);
 }
 .word:nth-child(20n) {
   -webkit-transform:rotate(3deg);
+  -moz-transform:rotate(3deg);
 }
 .word:nth-child(21n) {
   -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
 }
 
 #words img {
@@ -104,16 +116,19 @@ body {
   top: 4200px;
   left: 9100px;
   -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
 }
 
 #travolta {
   top: 2300px;
   left: 1000px;
   -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
 }
 
 #pbr {
   -webkit-transform:rotate(25deg);
+  -moz-transform:rotate(25deg);
   position: absolute;
   top: 531px;
   left: 3300px;
@@ -121,6 +136,7 @@ body {
 
 #communism {
   -webkit-transform:rotate(-7deg);
+  -moz-transform:rotate(-7deg);
   position: absolute;
   top: 2040px;
   left: 4740px;
@@ -128,6 +144,7 @@ body {
 
 #foraker-logo {
   -webkit-transform:rotate(-14deg);
+  -moz-transform:rotate(-14deg);
   position: absolute;
   top: 600px;
   left: 420px;
@@ -135,6 +152,7 @@ body {
 
 #polaroid {
   -webkit-transform:rotate(30deg);
+  -moz-transform:rotate(30deg);
   position: absolute;
   top: 3600px;
   left: 6500px;
@@ -142,6 +160,7 @@ body {
 
 #stark {
   -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
   position: absolute;
   top: 4000px;
   left: 1500px;
@@ -159,7 +178,7 @@ body {
   z-index: 10;
 }
 #legend span#position {
-  background-color: black;
+  background-color: #333;
   text-indent: -9999px;
   position: relative;
   display: inline-block;

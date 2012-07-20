@@ -49,7 +49,7 @@ WordImporter.prototype.importDictionaryData = function(data, callback) {
 
 WordImporter.prototype.importWord = function(options) {
   options.collection.insert({
-    text: options.word.replace(/\s|-/g, "&nbsp;"),
+    text: options.word.replace(/\s/g, "&nbsp;").replace(/-/g, "&ndash;"),
     x: this.randomInt(9900),
     y: this.randomInt(4900)
   });
