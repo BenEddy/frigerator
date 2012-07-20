@@ -54,6 +54,5 @@ $(function(){
     pingX = (word.x / 6000) * 200
     ping = $("<span style=\"top: " + pingY + "px; left: " + pingX + "px;\" class=\"ping\">Ping</span>")
     $("#legend").append(ping)
-    ping.fadeOut("slow")
   });
 });
