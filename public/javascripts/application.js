@@ -41,7 +41,7 @@ $(function(){
     yPercent = window.scrollY / 3000
     indicatorX = 200 * xPercent
     indicatorY = 100 * yPercent
-    $("#legend span").css("top", indicatorY + "px").css("left", indicatorX + "px")
+    $("#legend span#position").css("top", indicatorY + "px").css("left", indicatorX + "px")
   });
 
   socket.on("word repositioned", function(word){

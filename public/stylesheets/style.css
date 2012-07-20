@@ -174,7 +174,7 @@ body {
 #legend span#position {
   background-color: #333;
   text-indent: -9999px;
-  position: relative;
+  position: absolute;
   display: inline-block;
 }
 
