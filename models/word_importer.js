@@ -6,7 +6,7 @@ var dictionaries = [
   {iterations: 2, file: "foraker.txt"},
   {iterations: 1, file: "random.txt"},
   {iterations: 1, file: "urban.txt"},
-  {iterations: 3, file: "programming.txt"}
+  {iterations: 3, file: "programming.txt"},
   {iterations: 1, file: "last_minute.txt"}
 ]
 

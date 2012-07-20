@@ -75,12 +75,6 @@ body {
     color-stop(0.5, #EFEFEF),
     color-stop(0.5, #FFF)
   );
-/*  background-image: -webkit-linear-gradient(bottom, $start-color $start-stop, $end-color $end-stop);*/
-
-/*  background: -moz-linear-gradient(
-    bottom, #FAFAFA, #FFF, 0.5, 0.5
-  );
-*/
   background: -moz-linear-gradient(bottom, #EFEFEF, #FFF 50%);
 }
 .word:nth-child(2n) {
