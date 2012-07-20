@@ -116,5 +116,65 @@ body {
   -webkit-transform:rotate(25deg);
   position: absolute;
   top: 531px;
-  left: 1300px;
+  left: 3300px;
 }
+
+#communism {
+  -webkit-transform:rotate(-7deg);
+  position: absolute;
+  top: 2040px;
+  left: 4740px;
+}
+
+#foraker-logo {
+  -webkit-transform:rotate(-14deg);
+  position: absolute;
+  top: 600px;
+  left: 420px;
+}
+
+#polaroid {
+  -webkit-transform:rotate(30deg);
+  position: absolute;
+  top: 3600px;
+  left: 6500px;
+}
+
+#stark {
+  -webkit-transform:rotate(5deg);
+  position: absolute;
+  top: 4000px;
+  left: 1500px;
+}
+
+#legend {
+  border: 1px solid #black;
+  height: 100px;
+  width: 200px;
+  background: grey;
+  opacity: 0.3;
+  position: fixed;
+  top:0px;
+  right:0px;
+  z-index: 10;
+}
+#legend span#position {
+  background-color: black;
+  text-indent: -9999px;
+  position: relative;
+  display: inline-block;
+}
+
+#legend span.ping {
+  z-index: 12;
+  position: absolute;
+  background-color: red;
+  height: 8px;
+  border-radius: 4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius: 4px;
+  width: 8px;
+  text-indent: -9999px;
+  display: inline-block;
+}
+

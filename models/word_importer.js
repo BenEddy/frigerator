@@ -3,7 +3,7 @@ var dictionaries = [
   {iterations: 8, file: "common.txt"},
   {iterations: 40, file: "suffixes.txt"},
   {iterations: 1, file: "basic.txt"},
-  {iterations: 1, file: "foraker.txt"},
+  {iterations: 2, file: "foraker.txt"},
   {iterations: 1, file: "random.txt"},
   {iterations: 1, file: "urban.txt"},
   {iterations: 3, file: "programming.txt"}
@@ -49,8 +49,8 @@ WordImporter.prototype.importDictionaryData = function(data, callback) {
 WordImporter.prototype.importWord = function(options) {
   options.collection.insert({
     text: options.word.replace(/\s/g, "&nbsp;"),
-    x: this.randomInt(9500),
-    y: this.randomInt(4500)
+    x: this.randomInt(9900),
+    y: this.randomInt(4900)
   });
   options.callback(options.word);
 }

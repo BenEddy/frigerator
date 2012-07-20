@@ -54,7 +54,6 @@ app.get('/import', function(req, res){
 // Socket IO
 io.sockets.on('connection', function (socket) {
   socket.on('word repositioned', function (params) {
-    console.log("RECEIVED")
     wordCollection.update(params);
     io.sockets.emit('word repositioned', params);
   });

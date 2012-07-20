@@ -2,6 +2,11 @@ $(function(){
   var socket         = io.connect(window.location.href);
   var wordsContainer = $("#words");
 
+  yPercent = window.innerHeight / 5000
+  xPercent = window.innerWidth / 10000
+  $("#legend span").height(100 * yPercent + "px")
+  $("#legend span").width(200 * xPercent + "px")
+
   $.ajax({
     url: "/",
     success: function(data) {
@@ -31,10 +36,24 @@ $(function(){
     }
   });
 
+  $(window).scroll(function(event){
+    xPercent = window.scrollX / 10000
+    yPercent = window.scrollY / 5000
+    indicatorX = 200 * xPercent
+    indicatorY = 100 * yPercent
+    $("#legend span").css("top", indicatorY + "px").css("left", indicatorX + "px")
+  });
+
   socket.on("word repositioned", function(word){
     $("#" + word._id).offset({
       top: word.y,
       left: word.x
     })
+
+    pingY = (word.y / 10000) * 100
+    pingX = (word.x / 10000) * 200
+    ping = $("<span style=\"top: " + pingY + "px; left: " + pingX + "px;\" class=\"ping\">Ping</span>")
+    $("#legend").append(ping)
+    ping.fadeOut("slow")
   });
 });
