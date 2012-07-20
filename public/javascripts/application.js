@@ -55,4 +55,12 @@ $(function(){
     ping = $("<span style=\"top: " + pingY + "px; left: " + pingX + "px;\" class=\"ping\">Ping</span>")
     $("#legend").append(ping)
   });
+
+  $("#legend").click(function(event){
+    percentX = event.offsetX / 200
+    percentY = event.offsetY / 100
+    x = percentX * 6000 - 100
+    y = percentY * 3000 - 50
+    window.scrollTo(x, y);
+  });
 });
