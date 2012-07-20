@@ -50,8 +50,8 @@ WordImporter.prototype.importDictionaryData = function(data, callback) {
 WordImporter.prototype.importWord = function(options) {
   options.collection.insert({
     text: options.word.replace(/\s/g, "&nbsp;").replace(/-/g, "&ndash;"),
-    x: this.randomInt(9900),
-    y: this.randomInt(4900)
+    x: this.randomInt(5900),
+    y: this.randomInt(2900)
   });
   options.callback(options.word);
 }

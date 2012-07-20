@@ -4,8 +4,8 @@ body {
   box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
   -webkit-box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
   -moz-box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
-  height: 5000px;
-  width: 10000px;
+  height: 3000px;
+  width: 6000px;
   padding: 0;
   margin: 0;
 }
@@ -33,7 +33,7 @@ body {
 .handle {
   text-indent: -9999px;
   float: right;
-  height: 5000px;
+  height: 3000px;
   width: 100px;
   background-image: url("/images/handle_texture.png");
   margin-right: 25px;
@@ -107,8 +107,8 @@ body {
 }
 
 #drawing {
-  top: 4200px;
-  left: 9100px;
+  top: 2199px;
+  left: 5154px;
   -webkit-transform: rotate(8deg);
   -moz-transform: rotate(8deg);
 }
@@ -133,7 +133,7 @@ body {
   -moz-transform:rotate(-7deg);
   position: absolute;
   top: 2040px;
-  left: 4740px;
+  left: 3740px;
 }
 
 #foraker-logo {
@@ -148,15 +148,15 @@ body {
   -webkit-transform:rotate(30deg);
   -moz-transform:rotate(30deg);
   position: absolute;
-  top: 3600px;
-  left: 6500px;
+  top: 600px;
+  left: 4500px;
 }
 
 #stark {
   -webkit-transform:rotate(5deg);
   -moz-transform:rotate(5deg);
   position: absolute;
-  top: 4000px;
+  top: 1500px;
   left: 1500px;
 }
 

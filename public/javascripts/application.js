@@ -2,8 +2,8 @@ $(function(){
   var socket         = io.connect(window.location.href);
   var wordsContainer = $("#words");
 
-  yPercent = window.innerHeight / 5000
-  xPercent = window.innerWidth / 10000
+  yPercent = window.innerHeight / 3000
+  xPercent = window.innerWidth / 6000
   $("#legend span").height(100 * yPercent + "px")
   $("#legend span").width(200 * xPercent + "px")
 
@@ -37,8 +37,8 @@ $(function(){
   });
 
   $(window).scroll(function(event){
-    xPercent = window.scrollX / 10000
-    yPercent = window.scrollY / 5000
+    xPercent = window.scrollX / 6000
+    yPercent = window.scrollY / 3000
     indicatorX = 200 * xPercent
     indicatorY = 100 * yPercent
     $("#legend span").css("top", indicatorY + "px").css("left", indicatorX + "px")
@@ -50,8 +50,8 @@ $(function(){
       left: word.x
     })
 
-    pingY = (word.y / 10000) * 100
-    pingX = (word.x / 10000) * 200
+    pingY = (word.y / 3000) * 100
+    pingX = (word.x / 6000) * 200
     ping = $("<span style=\"top: " + pingY + "px; left: " + pingX + "px;\" class=\"ping\">Ping</span>")
     $("#legend").append(ping)
     ping.fadeOut("slow")
